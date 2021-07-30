@@ -1,0 +1,2 @@
+module.exports = func => (req,res,next) => 
+Promise.resolve(func(req,res,next)).catch(next)  // Postman ma name or other key hatayo bhane sending request bhai rahanxa. So teslai solve garna lai yo banaakao
